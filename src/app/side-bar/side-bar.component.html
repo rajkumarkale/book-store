@@ -1,0 +1,70 @@
+<nav id="sidebarMenu" class="">
+  <div class="position-sticky pt-3">
+    <div class="searchbar-container">
+      <input class="form-control w-100" type="text" placeholder="Search" aria-label="Search" (keydown)="resetAllFilter()" (ngModelChange)="searchText = $event;updateFilter();searchBooksWithWords($event)" [(ngModel)]="searchText">
+    </div>
+    <div class="sidebar-content">
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-3 text-muted">
+        <span>Filters</span>
+      </h6>
+
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-3 text-muted">
+        <span>Authors</span>
+      </h6>
+      <div class="flex-column filters">
+        <div class="d-flex flex-column author-filter overflow-auto">
+          <ng-container *ngFor="let author of this.authorList">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="author1" (ngModelChange)="author.isAuthorSelected = $event;updateFilter();"  [(ngModel)]="author.isAuthorSelected">
+              <label class="form-check-label" for="author1">{{author.authorName}}</label>
+            </div>
+          </ng-container>
+        </div>
+        <div class="devider"></div>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-3 text-muted">
+          <span>Books</span>
+        </h6>
+        <div class="d-flex flex-column author-filter overflow-auto">
+
+          <ng-container *ngFor="let book of this.bookNameList">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" (ngModelChange)="book.isNameSelected = $event;updateFilter()" value="" id="book1" [ngModel]="book.isNameSelected">
+              <label class="form-check-label" for="book1">{{book.bookName}}</label>
+            </div>
+          </ng-container>
+        </div>
+
+
+      </div>
+
+      <div class="devider"></div>
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-2 text-muted">
+        <span>Page Count</span>
+      </h6>
+      <nav class="pagination-contaiiner">
+
+        <div class="d-flex flex-column">
+          <ng-container *ngFor="let symbol of comparators">
+          <span class="p-1 cursor-pointer" (click)="comparator = symbol">
+            {{symbol}}
+          </span>
+          </ng-container>
+
+        </div>
+        <label class="ml-3">
+          <input class="pagination-search" type="number" (ngModelChange)="pageCount = $event; updateFilter()" [min]="0" [max]="maxPageCount" [ngModel]="pageCount">
+        </label>
+
+      </nav>
+
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-2 text-muted">
+        <span>Published Date</span>
+      </h6>
+      <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+        <input class="form-control" type="text" readonly/>
+        <div class="input-group-addon"><i class="bi bi-calendar3"></i></div>
+      </div>
+    </div>
+
+  </div>
+</nav>

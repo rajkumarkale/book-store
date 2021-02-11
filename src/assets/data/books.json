@@ -1,0 +1,82 @@
+{
+  "books": [
+    {
+      "bookName": "India Positive",
+      "authorName": "Chetan Bhagat",
+      "publishDate": "10/02/2002",
+      "pageCount": 100
+    },
+     {
+          "bookName": "Making India Awesome",
+          "authorName": "Chetan Bhagat",
+          "publishDate": "23/11/2005",
+          "pageCount": 150
+        },
+        {
+      "bookName": "The Post Office",
+      "authorName": "Rabindranath Tagore",
+      "publishDate": "12/07/2009",
+      "pageCount": 105
+    },
+     {
+          "bookName": "Stray Birds",
+          "authorName": "Rabindranath Tagore",
+          "publishDate": "02/06/1990",
+          "pageCount": 674
+        },
+     {
+          "bookName": "The Skeleton and That Man",
+          "authorName": "Amrita Pritam",
+          "publishDate": "16/05/1994",
+          "pageCount": 201
+        },
+     {
+          "bookName": "Rasidi Ticket",
+          "authorName": "Amrita Pritam",
+          "publishDate": "12/07/2009",
+          "pageCount": 340
+        },
+     {
+          "bookName": "The Clothing of Books",
+          "authorName": "Jhumpa Lahiri",
+          "publishDate": "10/02/2002",
+          "pageCount": 123
+        },
+     {
+          "bookName": "Hell-Heaven",
+          "authorName": "Jhumpa Lahiri",
+          "publishDate": "",
+          "pageCount": 543
+        },
+     {
+          "bookName": "The Guide",
+          "authorName": "R. K. Narayan",
+          "publishDate": "03/11/1990",
+          "pageCount": 987
+        },
+     {
+          "bookName": "The Dark Room",
+          "authorName": "R. K. Narayan",
+          "publishDate": "27/04/1997",
+          "pageCount": 456
+        },
+     {
+          "bookName": "The Bachelor of Arts",
+          "authorName": "R. K. Narayan",
+          "publishDate": "13/03/2000",
+          "pageCount": 236
+        },
+     {
+          "bookName": "The God of Small Things",
+          "authorName": "Arundhati Roy",
+          "publishDate": "01/01/1995",
+          "pageCount": 765
+        },
+     {
+          "bookName": "The cost of living",
+          "authorName": "Arundhati Roy",
+          "publishDate": "07/12/2001",
+          "pageCount": 178
+        }
+  ]
+}

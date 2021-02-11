@@ -1,0 +1,12 @@
+<main class="">
+  <div class="d-inline-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Books Dashboard</h1>
+  </div>
+  <div class="col-md-12 row">
+    <ng-container *ngFor="let book of bookList">
+      <app-book-card class="d-inline-flex flex-column flex-fill book-card-panel mr-3" [bookDetails]="book"></app-book-card>
+    </ng-container>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    </div>
+  </div>
+</main>

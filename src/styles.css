@@ -1,1 +1,225 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+    background: #ededed;
+}
+
+body {
+    font-size: .875rem;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+
+/*############ Sidebar  ################
+######################################*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    background: #fff;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 0rem;
+    }
+}
+
+.navbar-toggler {
+    background: #248afd;
+    color: #fff;
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.sidebar-content {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.searchbar-container {
+    width: 100%;
+    padding: 0 20px 0 12px;
+    margin-bottom: 15px;
+}
+
+.searchbar-container input {
+    background: transparent;
+    border: 1px solid #ddd;
+}
+
+.searchbar-container input:focus {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    outline: 0;
+}
+
+
+/*
+ * Navbar
+ */
+
+.navbar {
+    background-color: #282f3a;
+}
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.filters .form-check-label {
+    text-transform: uppercase;
+    color: #555;
+    font-size: 12px;
+}
+
+
+/*================Main Page
+===========================*/
+
+.page-container {}
+
+
+/*================Pagination
+==============================*/
+
+.pagination-contaiiner {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-search {
+    width: 50px;
+    height: 34px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pagination-contaiiner .pagination {
+    margin-bottom: 0px;
+}
+
+#datepicker {
+    width: 100%;
+    margin: 0;
+}
+
+#datepicker input {
+    background: transparent;
+}
+
+#datepicker .input-group-addon {
+    width: 38px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.devider {
+    width: 100%;
+    border-bottom: 1px dashed #ddd;
+    margin: 20px 0;
+}
+
+
+/*==========Book Card
+======================*/
+
+.book-card {
+    margin-bottom: 20px;
+}
+
+.book-card .card-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    background: #248afd;
+}
+
+.book-card .card-title {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #555;
+}
+
+.book-card p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #757575;
+}
+
+.book-card p strong {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*================ FOOTER
+==========================*/
+
+footer {
+    padding: 15px 20px;
+    background-color: #282f3a;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
